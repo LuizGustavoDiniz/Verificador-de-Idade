@@ -12,13 +12,34 @@ function calcular(){
     var sexoM = mas.checked
     var anoAtual = 2021
     var res = (anoAtual-anoN.value)
-    if(res >= 1 && res <=14 && sexoF==true){
-        parag.innerHTML = `Detectamos Mulher com ${res} anos`
+    if(res >= 9 && res <=15 && sexoF==true){
+        parag.innerHTML = `<strong>Detectamos Mulher com ${res} anos</strong>`
         img.src = "/imagens/menina12.jpg"
-    }else if (res <=14 && sexoM==true){
-        parag.innerHTML = `Detectamos homem com ${res} anos`
+    }else if (res <=15 && sexoM==true){
+        parag.innerHTML = `<strong>Detectamos homem com ${res} anos </strong>`
         img.src = "/imagens/menino13.jpg"
+    }else if(res >=16 && res <= 39 && sexoF==true){
+        parag.innerHTML =`<strong>Detectamos Mulher com ${res} anos</strong>`
+        img.src = "/imagens/adulta26.jpg"
     }
-
+    else if(res >=16 && res <= 39 && sexoM==true){
+       parag.innerHTML= `<strong>Detectamos homem com ${res} anos </strong>`
+       img.src = "/imagens/adulto25.jpg"
+    }
+    else if(res >= 40 && res <= 59 && sexoF==true){
+        parag.innerHTML =`<strong>Detectamos Mulher com ${res} anos</strong>`
+        img.src = "/imagens/Mmeiaidade51.jpg"
+    }
+    else if(res >= 40 && res <= 59 && sexoM==true){
+        parag.innerHTML = `<strong>Detectamos homem com ${res} anos </strong>`
+        img.src = "/imagens/Hmeiaidade50.jpg"
+    }else if(res >= 60 && sexoM==true){
+        parag.innerHTML = `<strong>Detectamos homem com ${res} anos </strong>`
+        img.src = "/imagens/velho70.jpg"
+    }
+    else if(res >=60 && sexoF==true){
+        parag.innerHTML =`<strong>Detectamos Mulher com ${res} anos</strong>`
+        img.src = "/imagens/velha71.jpg"
+    }
+    
 }
-//ainda estou trabalhando nele
